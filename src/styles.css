@@ -1,0 +1,41 @@
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/981/original/day.jpg?1665981742>);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px 950px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 25px;
+}
+.temp-number {
+  font-size: 100px;
+  text-align: right;
+  font-weight: bold;
+}
+.date-heading {
+  text-align: right;
+  right: 0px;
+  font-size: 30px;
+}
+h2 {
+  text-align: right;
+  font-size: 100px;
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+.cond {
+  float: left;
+  text-align: left;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+.conditions {
+  text-align: right;
+  font-weight: 800;
+}
+.units {
+  font-size: 24px;
+  color: black;
+}

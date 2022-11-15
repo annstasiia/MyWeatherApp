@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"/>
+      <link rel="stylesheet" href="src/styles.css" />
+  </head>
+ 
+  <body >
+<div class="container">
+  <!-------search form------------>  
+  <form class="city-search" id="search-form">
+    <div class="row">
+      <div class="col-6">
+        <input
+          type="search"
+          placeholder="Enter Your City"
+          autofocus="on"
+          autocomplete="off"
+          id="search-input-result"
+          class="form-control shadow-sm"
+        />
+      </div>
+      <div class="col-3">
+        <input
+          class="form-control btn btn-primary shadow-sm w-100"
+          type="submit"
+          value="Search"
+        />
+      </div>
+      <div class="col-3">
+        <button
+          class="btn btn-success w-100"
+          id="current-location-button"
+        >Current
+      </button>
+      </div>
+    </div>
+  </form>
+  <!---------current city---------->
+    <h2 class="current-city" id="current-city">London</h2>
+    <h3 class="date-heading"></h3>
+  <!---------temperature----------->
+  <div class="container">
+     <div class="row">
+            <div class="col-md-3 temperature">
+            <span class="temp-number" id="temperature">17</span>
+            <span class="units col-md-3"><a href="#" id="celsius-link">°C</a>|
+              <a href="#" id="fahrenheit-link">°F</a></span>
+            </div>
+            <!------conditions--------->
+            <div class="col-md-3 col-md-offset-3 conditions">
+              Weather: <span class="weather" id="weather">Clear</span>
+              <br />
+              Humidity: <span class="humidity" id="humidity">70</span>%
+              <br />
+              Wind: <span class="wind" id="wind">2</span>km/h
+            </div>
+          </div>
+        </div>
+      </div>
+        <!---------weather cards------------->
+      <div class="card-group mt-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Monday</h5>
+            <p class="card-text"> +17°C </br>
+              Precipitation: 3% </br>
+              Humidity: 40% </br>
+              Wind: 20 km/h </br>
+       </p>
+      </div>
+        </div>
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Tuesday</h5>
+            <p class="card-text">+19°C ⛅ </br>
+              Precipitation: 5% </br>
+              Humidity: 62% </br>
+              Wind: 24 km/h </br></p>
+            
+          </div>
+        </div>
+        <div class="card">
+       
+          <div class="card-body">
+            <h5 class="card-title">Wednesday</h5>
+            <p class="card-text">+16°C ⛅ </br>
+              Precipitation: 2% </br>
+              Humidity: 60% </br>
+              Wind: 15 km/h </br></p>
+       
+          
+        </div>
+        
+      </div>
+      <div class="card">
+       
+        <div class="card-body">
+          <h5 class="card-title">Thursday</h5>
+          <p class="card-text">+16°C ☀️ </br>
+            Precipitation: 6% </br>
+            Humidity: 43% </br>
+            Wind: 5 km/h </br></p>
+      
+        
+      </div>
+      
+          </div>
+          <div class="card">
+       
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <p class="card-text">+16°C ☀️ </br>
+                Precipitation: 2% </br>
+                Humidity: 43% </br>
+                Wind: 12 km/h </br></p>
+         
+            
+          </div>
+      
+        </div>
+      </div>
+    <script
+      src="src/index.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
